@@ -36,5 +36,5 @@ logit = (
 prob = 1 / (1 + np.exp(-logit))
 
 # Resultado
-st.subheader("Resultado")
-st.metric("Probabilidad estimada de LDL < 55 (estimado)", f"{prob*100:.1f}%")
+st.subheader("Result")
+st.metric("Estimated probability of LDLc < 55 mg/dl", f"{prob*100:.1f}%")
