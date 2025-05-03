@@ -19,8 +19,8 @@ st.markdown("Required fields.")
 ldl = st.slider("LDL (mg/dL)", min_value=50, max_value=200, value=100)
 estatinas = st.radio("¿On-treatment with statins?", [0, 1], format_func=lambda x: "Yes" if x else "No")
 edad = st.slider("Edad", min_value=18, max_value=100, value=60)
-dm = st.radio("¿El paciente tiene diabetes mellitus?", [0, 1], format_func=lambda x: "Sí" if x else "No")
-ci = st.radio("¿Antecedente de cardiopatía isquémica?", [0, 1], format_func=lambda x: "Sí" if x else "No")
+dm = st.radio("¿Diabetes mellitus?", [0, 1], format_func=lambda x: "Yes" if x else "No")
+ci = st.radio("¿Previous coronary heart disease?", [0, 1], format_func=lambda x: "Yes" if x else "No")
 
 # Cálculo del logit y probabilidad
 interaction = ldl * estatinas
